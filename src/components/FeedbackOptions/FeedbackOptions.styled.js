@@ -3,7 +3,7 @@ export const ButtonSection = styled.div`
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 `;
 export const Button = styled.button`
   width: 120px;
