@@ -4,6 +4,7 @@ import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
 import { Wraper } from './App.styled';
+import { GlobalStyle } from './GlobalStyle';
 export class App extends Component {
   state = {
     good: 0,
@@ -49,7 +50,7 @@ export class App extends Component {
             positivePercentage={positivePercentage}
           />
         </Section>) :  <Notification message="There is no feedback"/>}
-       
+       <GlobalStyle/>
       </Wraper>
     );
   }
