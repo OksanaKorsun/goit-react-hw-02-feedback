@@ -29,7 +29,7 @@ export class App extends Component {
     return Math.round(positive);
   };
   render() {
-    const options = ['good', 'neutral', 'bad'];
+    const options = Object.keys(this.state);
     const { good, neutral, bad } = this.state;
     const total = this.countTotalFeedback();
     const positivePercentage = this.countPositiveFeedbackPercentage();
